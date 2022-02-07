@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ashongwurei | Designer & Developer</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="body">
+    <!-- HEADER SECTION -->
+    <header id="home">
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="container navbar flex">
+          <a href="/" class="logo">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <a href="#" class="toggle-button">
+            <svg class="icon--bars icon--secondary">
+              <use xlink:href="images/sprite.svg#bars"></use>
+            </svg>
+          </a>
+          <ul class="nav-items list flex flex--col hidden">
+            <li><a href="/" class="link link--nav">Home</a></li>
+            <li><a href="#about" class="link link--nav">About</a></li>
+            <li><a href="#projects" class="link link--nav">Projects</a></li>
+            <li><a href="#contact" class="link link--nav">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Hero -->
+      <div class="hero container flex">
+        <div class="hero-textbox flex flex--col">
+          <h1>Ashongwurei Usman</h1>
+          <p>
+            I am a Product Designer and a Front-end Developer based in
+            Nigeria.<br />
+            I build interfaces that people love to use.
+          </p>
+          <a href="#contact" class="btn btn--accent btn--normal link"
+            >Get in Touch</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="white-space">
+      <div class="container about-content grid grid--3x2">
+        <h2>About Me</h2>
+        <img src="images/profile-photo.png" alt="" class="profile-photo" />
+        <p class="profile-summary">
+          I design visually pleasing, user-friendly interfaces and also make
+          them live by writing the programs for their development.<br /><br />I
+          am seeking a platform to practice my skills and gain more experience
+          for the mutual development of my career and the organization.<br /><br />I
+          am a Masters student of Telecommunication Engineering at Federal
+          University of Technology, Minna, Nigeria. I obtained Bachelor’s degree
+          in Computer Engineering from Ekiti State University, Ado-Ekiti,
+          Nigeria.
+        </p>
+        <a
+          href="documents/ashongwurei-usman-resume-2022.pdf"
+          target="_blank"
+          class="link link--about"
+          >View Résumé</a
+        >
+      </div>
+    </section>
+
+    <!-- MY PROJECTS SECTION -->
+    <section id="projects" class="white-space">
+      <div class="container">
+        <h2>My Projects</h2>
+        <div class="my-projects grid grid--1x2">
+          <a href="/" class="link link--card">
+            <div class="card">
+              <img src="images/my-todo.png" alt="" class="project-photo" />
+              <h3 class="project-caption">Todo App with Vue JS</h3>
+              <p>A simple Todo App with interesting features to track tasks.</p>
+            </div>
+          </a>
+          <a href="/" class="link link--card">
+            <div class="card">
+              <img src="images/my-portfolio.png" alt="" class="project-photo" />
+              <h3 class="project-caption">Portfolio Website with HTML & CSS</h3>
+              <p>
+                My Portfolio Website that talks about me and showcases my
+                projects.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="contact">
+      <!-- Contacts -->
+      <div class="my-contact container grid grid--1x2">
+        <div class="contact-content flex flex--col">
+          <h2>Get in Touch</h2>
+          <p class="title">
+            For enquiries or if you require any additional information, please
+            send me a message.
+          </p>
+          <div class="contact-icons flex flex--col">
+            <div class="icon-align flex">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#phone"></use>
+              </svg>
+              <p>+2349035294415</p>
+            </div>
+            <div class="icon-align flex">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#mail"></use>
+              </svg>
+              <p>ashongwurei@gmail.com</p>
+            </div>
+            <div class="icon-align flex">
+              <svg class="icon icon--secondary">
+                <use xlink:href="images/sprite.svg#location"></use>
+              </svg>
+              <p>Abuja, FCT, Nigeria</p>
+            </div>
+          </div>
+        </div>
+        <!-- Form -->
+        <form
+          class="input-container flex flex--col"
+          action="https://formspree.io/f/mdobkrrr"
+          method="POST"
+        >
+          <input
+            type="text"
+            name="name"
+            class="input"
+            placeholder="Name"
+            required
+            minlength="2"
+            maxlength="30"
+          />
+          <input
+            type="email"
+            name="email"
+            class="input"
+            placeholder="Email"
+            required
+            minlength="2"
+            maxlength="30"
+          />
+          <textarea
+            name="text"
+            class="textarea"
+            placeholder="Message"
+            required
+            minlength="2"
+            maxlength="800"
+          ></textarea>
+          <button type="submit" class="btn btn--accent btn--full">Send</button>
+        </form>
+      </div>
+      <!-- Footer Bar -->
+      <div class="footer-bar">
+        <div class="main-footer container grid grid--1x2">
+          <div class="social-media flex">
+            <a href="https://twitter.com/ashongwurei/" target="_blank">
+              <svg class="icon icon--footer twitter">
+                <use xlink:href="images/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/ashongwurei/" target="_blank">
+              <svg class="icon icon--footer instagram">
+                <use xlink:href="images/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+            <a href="https://github.com/ashongwurei/" target="_blank">
+              <svg class="icon icon--footer github">
+                <use xlink:href="images/sprite.svg#github"></use>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ashongwurei-usman-35a172157/"
+              target="_blank"
+            >
+              <svg class="icon icon--footer linkedin">
+                <use xlink:href="images/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </div>
+          <p>Copyright © 2022. Ashongwurei Usman. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
