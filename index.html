@@ -11,22 +11,51 @@
   <body class="body">
     <!-- HEADER SECTION -->
     <header id="home">
+      <div class="overlay hidden"></div>
       <!-- Navigation Bar -->
       <nav>
         <div class="container navbar flex">
-          <a href="/" class="logo">
-            <img src="images/logo.png" alt="" />
-          </a>
-          <a href="#" class="toggle-button">
-            <svg class="icon--bars icon--secondary">
-              <use xlink:href="images/sprite.svg#bars"></use>
-            </svg>
-          </a>
+          <a href="/" class="link logo">AU</a>
+          <div class="open-nav-items flex flex--col">
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <div class="flex flex--col close-nav-items hidden">
+            <span class="bar bar--left"></span>
+            <span class="bar bar--right"></span>
+          </div>
           <ul class="nav-items list flex flex--col hidden">
             <li><a href="/" class="link link--nav">Home</a></li>
-            <li><a href="#about" class="link link--nav">About</a></li>
+            <li>
+              <a href="#about" class="link link--nav">About</a>
+            </li>
             <li><a href="#projects" class="link link--nav">Projects</a></li>
             <li><a href="#contact" class="link link--nav">Contact</a></li>
+            <div class="social-media flex">
+              <a href="https://twitter.com/ashongwurei/" target="_blank">
+                <svg class="icon icon--footer twitter">
+                  <use xlink:href="images/sprite.svg#twitter"></use>
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ashongwurei/" target="_blank">
+                <svg class="icon icon--footer instagram">
+                  <use xlink:href="images/sprite.svg#instagram"></use>
+                </svg>
+              </a>
+              <a href="https://github.com/ashongwurei/" target="_blank">
+                <svg class="icon icon--footer github">
+                  <use xlink:href="images/sprite.svg#github"></use>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ashongwurei-usman-35a172157/"
+                target="_blank"
+              >
+                <svg class="icon icon--footer linkedin">
+                  <use xlink:href="images/sprite.svg#linkedin"></use>
+                </svg>
+              </a>
+            </div>
           </ul>
         </div>
       </nav>

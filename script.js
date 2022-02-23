@@ -1,16 +1,26 @@
 const navItems = document.querySelector(".nav-items");
-const toggleButton = document.querySelector(".toggle-button");
-// const navLink = document.querySelectorAll(".link--nav");
+const overlay = document.querySelector(".overlay");
+const btnOpen = document.querySelector(".open-nav-items");
+const btnClose = document.querySelector(".close-nav-items");
+const navLinks = document.querySelectorAll(".link--nav");
 
-toggleButton.addEventListener("click", function () {
-  navItems.classList.toggle("active");
-});
+const openNavItems = function () {
+  navItems.classList.remove("hidden");
+  overlay.classList.remove("hidden");
+  btnClose.classList.remove("hidden");
+  btnOpen.classList.add("hidden");
+};
 
-// document.addEventListener("click", function () {
-//   navItems.classList.add("hidden");
-// });
+const closeNavItems = function () {
+  navItems.classList.add("hidden");
+  overlay.classList.add("hidden");
+  btnClose.classList.add("hidden");
+  btnOpen.classList.remove("hidden");
+};
 
-// for (let i = 0; i < navLink.length; i++)
-//   navLink[i].addEventListener("click", function () {
-//     navItems.classList.add(hidden);
-//   });
+btnOpen.addEventListener("click", openNavItems);
+btnClose.addEventListener("click", closeNavItems);
+overlay.addEventListener("click", closeNavItems);
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", closeNavItems);
+}
