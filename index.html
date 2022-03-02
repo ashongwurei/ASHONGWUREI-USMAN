@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ashongwurei | Designer & Developer</title>
+    <title>Ashongwurei | Software Engineer</title>
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -25,12 +25,26 @@
             <span class="bar bar--right"></span>
           </div>
           <ul class="nav-items list flex flex--col hidden">
-            <li><a href="/" class="link link--nav">Home</a></li>
             <li>
-              <a href="#about" class="link link--nav">About</a>
+              <a href="#home" id="home-button" class="link link--nav active"
+                >Home</a
+              >
             </li>
-            <li><a href="#projects" class="link link--nav">Projects</a></li>
-            <li><a href="#contact" class="link link--nav">Contact</a></li>
+            <li>
+              <a href="#about" id="about-button" class="link link--nav"
+                >About</a
+              >
+            </li>
+            <li>
+              <a href="#projects" id="projects-button" class="link link--nav"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="contact-button" class="link link--nav"
+                >Contact</a
+              >
+            </li>
             <div class="social-media flex">
               <a href="https://twitter.com/ashongwurei/" target="_blank">
                 <svg class="icon icon--footer twitter">
@@ -48,7 +62,7 @@
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/ashongwurei-usman-35a172157/"
+                href="https://www.linkedin.com/in/ashongwurei-usman/"
                 target="_blank"
               >
                 <svg class="icon icon--footer linkedin">
@@ -64,8 +78,8 @@
         <div class="hero-textbox flex flex--col">
           <h1>Ashongwurei Usman</h1>
           <p>
-            I am a Product Designer and a Front-end Developer based in
-            Nigeria.<br />
+            I am a Front-end Software Engineer with excellent product design
+            background.<br />
             I build interfaces that people love to use.
           </p>
           <a href="#contact" class="btn btn--accent btn--normal link"
@@ -107,14 +121,19 @@
           <a href="/" class="link link--card">
             <div class="card">
               <img src="images/my-todo.png" alt="" class="project-photo" />
-              <h3 class="project-caption">Todo App with Vue JS</h3>
-              <p>A simple Todo App with interesting features to track tasks.</p>
+              <h4 class="project-caption">Todo App with Vue JS & Bootstrap</h4>
+              <p>
+                A simple Todo App with local storage and other interesting
+                features to track tasks.
+              </p>
             </div>
           </a>
           <a href="/" class="link link--card">
             <div class="card">
               <img src="images/my-portfolio.png" alt="" class="project-photo" />
-              <h3 class="project-caption">Portfolio Website with HTML & CSS</h3>
+              <h4 class="project-caption">
+                Portfolio Website with vanilla HTML, CSS & JavaScript
+              </h4>
               <p>
                 My Portfolio Website that talks about me and showcases my
                 projects.
