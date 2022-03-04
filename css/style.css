@@ -1,5 +1,5 @@
 /* --- BASIC SETTINGS --- */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
 
 :root {
   --color-primary: #303030;
@@ -58,7 +58,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.5;
@@ -200,16 +200,16 @@ h2 {
   padding: 1rem;
 }
 
-.input[type="text"],
-.input[type="email"],
-.textarea[name="text"] {
+.input[type='text'],
+.input[type='email'],
+.textarea[name='text'] {
   font-weight: 300;
   color: var(--color-secondary);
 }
 
-.input[type="text"]:focus,
-.input[type="email"]:focus,
-.textarea[type="text"]:focus {
+.input[type='text']:focus,
+.input[type='email']:focus,
+.textarea[type='text']:focus {
   font-weight: 300;
   border-color: var(--color-accent);
 }
@@ -290,7 +290,7 @@ h2 {
   }
 }
 
-/* --- HEADER SECTION --- */
+/* ---------- HEADER SECTION ---------- */
 header {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -404,6 +404,7 @@ nav {
   }
 }
 
+/* --- Hero --- */
 .hero {
   height: 100vh;
   align-items: center;
@@ -428,6 +429,7 @@ nav {
 @media screen and (min-width: 768px) {
   .hero-textbox {
     height: 29rem;
+    width: 52rem;
   }
 
   .hero-textbox h1 {
@@ -441,7 +443,13 @@ nav {
   }
 }
 
-/* --- ABOUT SECTION --- */
+@media screen and (min-width: 1024px) {
+  .hero-textbox {
+    width: 65rem;
+  }
+}
+
+/* ---------- ABOUT SECTION ---------- */
 .about-content {
   row-gap: 4rem;
   justify-items: center;
@@ -506,7 +514,7 @@ nav {
   }
 }
 
-/* --- PROJECTS SECTION --- */
+/* ---------- PROJECTS SECTION ---------- */
 #projects {
   background-color: #ececec;
 }
@@ -575,7 +583,7 @@ nav {
   }
 }
 
-/* --- FOOTER SECTION --- */
+/* ---------- FOOTER SECTION ---------- */
 footer {
   padding-top: 70px;
   background-color: #303030;
