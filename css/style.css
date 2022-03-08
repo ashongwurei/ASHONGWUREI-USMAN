@@ -74,16 +74,18 @@ h2 {
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    font-size: 1.8rem;
-  }
-
   h1 {
     font-size: 5.5rem;
   }
 
   h2 {
     font-size: 3.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.8rem;
   }
 }
 
@@ -100,11 +102,6 @@ h2 {
 .link--nav:hover {
   color: var(--color-accent);
 }
-
-/* .nav-items .link--nav.active {
-  color: var(--color-accent);
-  font-weight: 500;
-} */
 
 .link--about {
   color: var(--color-accent);
@@ -286,7 +283,7 @@ h2 {
 
   .grid--3x2 {
     grid-template-rows: 0.2fr 0.8fr 0.1fr;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 0.369fr 0.631fr;
   }
 }
 
@@ -463,6 +460,10 @@ nav {
   text-align: center;
 }
 
+.profile-summary p {
+  margin-bottom: 1rem;
+}
+
 @media screen and (min-width: 768px) {
   .about-content {
     row-gap: 5rem;
@@ -480,17 +481,18 @@ nav {
   }
 
   .profile-photo {
-    width: 82%;
+    width: 100%;
     order: -1;
     grid-row: 1/4;
-    justify-self: end;
+    justify-self: start;
   }
 
   .profile-summary {
     grid-column: 2;
     justify-self: left;
     text-align: left;
-    margin-top: -3.5rem;
+    margin-top: -1rem;
+    margin-bottom: 1.2rem;
   }
 
   .link--about {
@@ -503,10 +505,6 @@ nav {
 @media screen and (min-width: 1200px) {
   .about-content {
     column-gap: 8%;
-  }
-
-  .profile-photo {
-    width: 75%;
   }
 
   .profile-summary {
