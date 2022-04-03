@@ -3,27 +3,22 @@
 // Selecting Elements
 const navItems = document.querySelector('.nav-items');
 const overlay = document.querySelector('.overlay');
-const btnOpen = document.querySelector('.open-nav-items');
-const btnClose = document.querySelector('.close-nav-items');
+const toggleButton = document.querySelector('.toggle-button');
 const navLinks = document.querySelectorAll('.link--nav');
 const sections = document.querySelectorAll('.section');
 
 // Defining Repetitive Functions
-const openNavItems = function () {
-  navItems.classList.remove('hidden');
-  overlay.classList.remove('hidden');
-  btnClose.classList.remove('hidden');
-  btnOpen.classList.add('hidden');
+const toggleNavItems = function () {
+  navItems.classList.toggle('hidden');
+  overlay.classList.toggle('hidden');
 };
 
-const closeNavItems = function () {
+const hideNavItems = function () {
   navItems.classList.add('hidden');
   overlay.classList.add('hidden');
-  btnClose.classList.add('hidden');
-  btnOpen.classList.remove('hidden');
 };
 
-// Active Navigation Link on Scroll
+// Active Navigation Link on Scroll anc Click
 window.addEventListener('scroll', function () {
   let current = '';
   sections.forEach(function (section) {
@@ -43,9 +38,9 @@ window.addEventListener('scroll', function () {
 });
 
 // Mobile Navigation Behaviour
-btnOpen.addEventListener('click', openNavItems);
-btnClose.addEventListener('click', closeNavItems);
-overlay.addEventListener('click', closeNavItems);
+toggleButton.addEventListener('click', toggleNavItems);
+overlay.addEventListener('click', hideNavItems);
+
 for (let navLink of navLinks) {
-  navLink.addEventListener('click', closeNavItems);
+  navLink.addEventListener('click', hideNavItems);
 }
