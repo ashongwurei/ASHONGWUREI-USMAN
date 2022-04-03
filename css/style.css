@@ -402,41 +402,34 @@ hr {
 }
 
 .hero-textbox {
-  height: 32rem;
+  height: 50%;
   width: 100%;
   justify-content: space-between;
 }
 
 .hero-textbox h1 {
-  width: 28rem;
   line-height: 1.2;
   letter-spacing: -0.2rem;
 }
 
-.hero-textbox p {
-  margin-bottom: 6rem;
-}
-
 @media screen and (min-width: 768px) {
   .hero-textbox {
-    height: 29rem;
-    width: 52rem;
+    width: 75%;
   }
 
   .hero-textbox h1 {
-    width: 100%;
     line-height: 1.5;
     letter-spacing: -0.35rem;
-  }
-
-  .hero-textbox p {
-    margin-bottom: 6rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .hero-textbox {
-    width: 65rem;
+    width: 68%;
+  }
+
+  .hero-textbox p {
+    margin-bottom: 8%;
   }
 }
 
@@ -652,10 +645,6 @@ footer {
   .title {
     text-align: left;
     margin-bottom: 3.5rem;
-  }
-
-  .contact-icons {
-    height: 14.1rem;
   }
 }
 
