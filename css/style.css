@@ -66,7 +66,7 @@ body {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 9.428vw;
 }
 
 h2 {
@@ -402,14 +402,21 @@ hr {
 }
 
 .hero-textbox {
-  height: 50%;
+  height: 45%;
   width: 100%;
   justify-content: space-between;
 }
 
 .hero-textbox h1 {
+  margin-bottom: -10%;
   line-height: 1.2;
   letter-spacing: -0.2rem;
+}
+
+@media screen and (min-width: 390px) {
+  .hero-textbox {
+    height: 37.5%;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -425,11 +432,18 @@ hr {
 
 @media screen and (min-width: 1024px) {
   .hero-textbox {
+    height: 45%;
     width: 68%;
   }
 
-  .hero-textbox p {
-    margin-bottom: 8%;
+  .hero-textbox h1 {
+    margin-bottom: -10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-textbox h1 {
+    margin-bottom: -8%;
   }
 }
 
@@ -581,7 +595,7 @@ footer {
 }
 
 .contact-content {
-  height: 17.3rem;
+  height: 22.3rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -592,7 +606,7 @@ footer {
 }
 
 .contact-icons {
-  height: 12.3rem;
+  height: 8rem;
   justify-content: space-between;
 }
 
@@ -615,10 +629,6 @@ footer {
     row-gap: 5rem;
   }
 
-  .contact-icons {
-    height: 14.1rem;
-  }
-
   .input-container {
     height: 42rem;
   }
@@ -634,7 +644,7 @@ footer {
   }
 
   .contact-content {
-    height: 23.8rem;
+    height: 26.8rem;
     align-items: flex-start;
   }
 
@@ -651,10 +661,6 @@ footer {
 @media screen and (min-width: 1200px) {
   .my-contact {
     column-gap: 8rem;
-  }
-
-  .contact-content {
-    height: 25rem;
   }
 }
 
