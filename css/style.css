@@ -413,20 +413,41 @@ hr {
   letter-spacing: -0.2rem;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 376px) {
   .hero-textbox {
     height: 37.5%;
+  }
+
+  .hero-textbox h1 {
+    margin-bottom: -20%;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .hero-textbox {
+    height: 40%;
+  }
+
+  .hero-textbox h1 {
+    margin-bottom: -10%;
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero-textbox {
+    height: 28%;
     width: 75%;
   }
 
   .hero-textbox h1 {
     line-height: 1.5;
     letter-spacing: -0.35rem;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .hero-textbox {
+    height: 22%;
   }
 }
 
