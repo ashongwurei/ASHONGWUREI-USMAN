@@ -408,7 +408,7 @@ hr {
 }
 
 .hero-textbox h1 {
-  margin-bottom: -8vh;
+  margin-bottom: -10vh;
   line-height: 1.2;
   letter-spacing: -0.2rem;
 }
@@ -419,7 +419,7 @@ hr {
   }
 
   .hero-textbox h1 {
-    margin-bottom: -6vh;
+    margin-bottom: -8vh;
   }
 }
 
